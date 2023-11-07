@@ -20,5 +20,8 @@ $White: hsl(0, 0%, 100%);
 body{
     font-size: 1rem;
     background-color: $Charcoal-Grey;
+    height: 100vh;
+    display: grid;
+    place-content: center;
 }
 

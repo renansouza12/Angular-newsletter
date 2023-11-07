@@ -1,0 +1,12 @@
+@import 'src/styles.scss';
+
+.informations_title{
+    color: $Dark-Slate-Grey;
+    h1{
+        font-size: 2.5rem;
+    }
+    p{
+        margin: 1.5rem 0;
+        width: 90%;
+    }
+}
