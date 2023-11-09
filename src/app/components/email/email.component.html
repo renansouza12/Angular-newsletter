@@ -1,0 +1,14 @@
+<form class="email_container" (submit)="submit()"  [formGroup]="momentForm" #formDir="ngForm">
+    <label for="email">Email address</label>
+    <input 
+    type="email" 
+    name="email" 
+    id="email" placeholder="email@company.com"
+    formControlName="email"
+    >
+    <div class="validation_error" *ngIf="email.invalid && formDir.submitted "  >
+        <p>Valid email required</p>
+    </div>
+
+    <button type="submit">Subscribe to monthly newsletter</button>
+</form>

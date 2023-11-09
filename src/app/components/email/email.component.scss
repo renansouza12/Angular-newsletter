@@ -1,0 +1,35 @@
+@import 'src/styles.scss';
+
+.email_container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    label{
+        color: $Dark-Slate-Grey;
+        font-weight: bold;
+        font-size: 0.9rem;
+    }
+    input{
+        outline: none;
+        border: 2px solid $Grey;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1rem;
+        margin: 0.7rem  0 1.2rem 0;
+    }
+    button{
+        border: none;
+        padding: 1rem 5rem;
+        background-color: $Dark-Slate-Grey;
+        color: $White;
+        border-radius: 0.5rem;  
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: .7s;
+    }
+    button:hover{
+        scale: 1.1;
+        background: linear-gradient( to right, hsl(324, 61%, 59%), hsl(4, 100%, 67%)  );
+        box-shadow: 0px 8px 10px  hsla(4, 100%, 67%, 0.674);
+    }
+}

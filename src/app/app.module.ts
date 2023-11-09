@@ -1,20 +1,26 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { InformationsComponent } from './components/informations/informations.component';
 import { InformationsListComponent } from './components/informations/informations-list/informations-list.component';
 import { InformationsTitleComponent } from './components/informations/informations-title/informations-title.component';
+import { EmailComponent } from './components/email/email.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     InformationsComponent,
     InformationsListComponent,
-    InformationsTitleComponent
+    InformationsTitleComponent,
+    EmailComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    ReactiveFormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

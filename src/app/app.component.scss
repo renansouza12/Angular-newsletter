@@ -2,4 +2,14 @@
 #app{
     background-color: $White ;
     border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    .logIn{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
 }
