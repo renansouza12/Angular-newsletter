@@ -34,6 +34,12 @@
     }
     input.invalid{
         border-color: $tomato;
+        color: $tomato;
+        background-color: hsla(4, 100%, 67%, 0.16);
+    }
+    input.invalid::placeholder{
+        color: $tomato;
+
     }
     button{
         border: none;

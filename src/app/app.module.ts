@@ -7,6 +7,7 @@ import { InformationsComponent } from './components/informations/informations.co
 import { InformationsListComponent } from './components/informations/informations-list/informations-list.component';
 import { InformationsTitleComponent } from './components/informations/informations-title/informations-title.component';
 import { EmailComponent } from './components/email/email.component';
+import { SuccessMessageComponent } from './components/success-message/success-message.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { EmailComponent } from './components/email/email.component';
     InformationsComponent,
     InformationsListComponent,
     InformationsTitleComponent,
-    EmailComponent
+    EmailComponent,
+    SuccessMessageComponent
   ],
   imports: [
     BrowserModule,

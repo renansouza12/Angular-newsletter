@@ -1,4 +1,4 @@
-import { Component ,Input, OnInit} from '@angular/core';
+import { Component , OnInit} from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms';
 
 
@@ -9,7 +9,8 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
 })
 export class EmailComponent implements OnInit{
   emailValid!:string;
-  momentForm!:FormGroup
+  momentForm!:FormGroup;
+  
 
   ngOnInit(): void {
       this.momentForm = new FormGroup({
@@ -18,13 +19,17 @@ export class EmailComponent implements OnInit{
   }
 
   get email(){
+   
     return this.momentForm.get('email')!;
   }
 
   submit(){
+
     if(this.momentForm.invalid){
-    this.emailValid = "invalid"
-;      return 
+      this.emailValid = "invalid";      
+      return 
+    }else{
+      this.emailValid = "";    
     }
     
   }
