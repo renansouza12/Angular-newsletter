@@ -8,7 +8,7 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
   styleUrls: ['./email.component.scss']
 })
 export class EmailComponent implements OnInit{
-
+  emailValid!:string;
   momentForm!:FormGroup
 
   ngOnInit(): void {
@@ -23,7 +23,8 @@ export class EmailComponent implements OnInit{
 
   submit(){
     if(this.momentForm.invalid){
-      return 
+    this.emailValid = "invalid"
+;      return 
     }
     
   }

@@ -4,11 +4,26 @@
     display: flex;
     flex-direction: column;
     width: 80%;
-    label{
-        color: $Dark-Slate-Grey;
-        font-weight: bold;
-        font-size: 0.9rem;
+
+    .email_informations{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        label{
+            color: $Dark-Slate-Grey;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+        .validation_error{
+            p{
+                font-size: 0.9rem;
+                font-weight: bold;
+                color: $tomato;
+            }
+        }
     }
+    
     input{
         outline: none;
         border: 2px solid $Grey;
@@ -16,6 +31,9 @@
         padding: 1rem;
         font-size: 1rem;
         margin: 0.7rem  0 1.2rem 0;
+    }
+    input.invalid{
+        border-color: $tomato;
     }
     button{
         border: none;
