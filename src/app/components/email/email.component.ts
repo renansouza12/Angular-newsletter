@@ -1,4 +1,4 @@
-import { Component , OnInit} from '@angular/core';
+import { Component , OnInit, Output, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup,Validators } from '@angular/forms';
 
 
@@ -7,11 +7,12 @@ import { FormControl, FormGroup,Validators } from '@angular/forms';
   templateUrl: './email.component.html',
   styleUrls: ['./email.component.scss']
 })
-export class EmailComponent implements OnInit{
+export class EmailComponent implements OnInit{  
   emailValid!:string;
   momentForm!:FormGroup;
-  
 
+  @Output() emailValidated = new EventEmitter<boolean>();
+  
   ngOnInit(): void {
       this.momentForm = new FormGroup({
         email: new FormControl('',[Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')], ),
@@ -24,14 +25,15 @@ export class EmailComponent implements OnInit{
   }
 
   submit(){
-
     if(this.momentForm.invalid){
       this.emailValid = "invalid";      
       return 
     }else{
       this.emailValid = "";    
+      this.emailValidated.emit(true);
     }
-    
+   
   }
+
 
 }

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  sucessMessage!:boolean;
+
+  showLogIn:boolean = false;//change after
+  displayMessage:boolean =  true;
+
+  emailValidated():void{
+    this.showLogIn = false;
+    this.displayMessage = true;
+  }
 }
