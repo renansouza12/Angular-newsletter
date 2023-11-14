@@ -1,8 +1,12 @@
 <div id="app" *ngIf="showLogIn">
     <div class="logIn">
-        <app-informations />
-        <app-email (emailValidated)="emailValidated()" />
+        <app-informations/>
+        <app-email (emailValidated)="emailValidated()"/>
     </div>
     <img src="../assets/illustration-sign-up-desktop.svg" alt="illustration">
 </div>
-<app-success-message [successMessage]="displayMessage"  />
+<app-success-message 
+[successMessage]="displayMessage"
+[userEmail]="'email'"
+(dimissMessageEvent)="dimissMessage()"
+/>

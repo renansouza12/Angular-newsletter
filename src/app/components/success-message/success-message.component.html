@@ -1,6 +1,6 @@
 <div class="success_message" *ngIf="successMessage" >
     <img src="../../../assets/icon-success.svg" alt="">
     <h1>Thanks for subscribing!</h1>
-    <p>A confirmation email has been sent to <span>EMAIL</span>. Please open it and click the button inside to confirm your subscription</p>
-    <button>Dismiss message</button>
+    <p>A confirmation email has been sent to <span>{{emailValue}}</span>. Please open it and click the button inside to confirm your subscription</p>
+    <button (click)="dimissMessage()">Dismiss message</button>
 </div>

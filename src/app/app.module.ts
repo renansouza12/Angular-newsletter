@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SharedService } from './services/shared.service';
 
 import { AppComponent } from './app.component';
 import { InformationsComponent } from './components/informations/informations.component';
@@ -21,10 +22,11 @@ import { SuccessMessageComponent } from './components/success-message/success-me
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
    
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
