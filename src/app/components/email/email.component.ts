@@ -11,6 +11,8 @@ export class EmailComponent implements OnInit{
   emailValid!:string;
   momentForm!:FormGroup;
 
+  myValue!:string;
+
   @Output() emailValidated = new EventEmitter<boolean>();
   
   ngOnInit(): void {
@@ -25,14 +27,16 @@ export class EmailComponent implements OnInit{
   }
 
   submit(){
+    
     if(this.momentForm.invalid){
       this.emailValid = "invalid";      
       return 
     }else{
       this.emailValid = "";    
       this.emailValidated.emit(true);
+      
     }
-   
+    
   }
 
 

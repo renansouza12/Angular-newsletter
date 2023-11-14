@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  showLogIn:boolean = false;//change after
-  displayMessage:boolean =  true;
+  showLogIn:boolean = true;//change after
+  displayMessage:boolean =  false;
 
   emailValidated():void{
     this.showLogIn = false;
