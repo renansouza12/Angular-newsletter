@@ -1,0 +1,16 @@
+@media screen and (max-width:375px) {
+    .success_message{
+        width: 100vw;
+        height: 100vh;
+        padding: 2rem;
+        gap: 2rem;
+        border-radius: 0;
+        button{
+            margin-top: 10rem;
+            padding: 1rem 4rem;
+            border-radius: 0.5rem;
+          
+        }
+       
+    }
+}

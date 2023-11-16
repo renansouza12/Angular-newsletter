@@ -6,7 +6,15 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-
+   .image_cover{
+    width: 40%;
+        .image_desktop{
+            width: 100%;
+        }
+        .image_mobile{
+            display: none;
+        }
+   }
     .logIn{
         display: flex;
         flex-direction: column;

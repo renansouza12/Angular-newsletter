@@ -3,7 +3,11 @@
         <app-informations/>
         <app-email (emailValidated)="emailValidated()"/>
     </div>
-    <img src="../assets/illustration-sign-up-desktop.svg" alt="illustration">
+    <div class="image_cover">
+        <img class="image_desktop" src="../assets/illustration-sign-up-desktop.svg" alt="illustration-desktop">
+        <img class="image_mobile" src="../assets/illustration-sign-up-mobile.svg" alt="illustration-mobile">
+    </div>
+   
 </div>
 <app-success-message 
 [successMessage]="displayMessage"

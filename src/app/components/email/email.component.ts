@@ -5,7 +5,7 @@ import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-email',
   templateUrl: './email.component.html',
-  styleUrls: ['./email.component.scss']
+  styleUrls: ['./email.component.scss','email.responsive.component.scss']
 })
 export class EmailComponent implements OnInit{  
   emailValid!:string;

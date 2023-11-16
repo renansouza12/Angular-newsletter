@@ -1,0 +1,34 @@
+@media screen and (max-width:768px) {
+    #app{
+        .image_cover{
+            width: 60%;
+            img{
+                width: 100%;
+             }
+        }
+    
+    }   
+}
+@media screen and (max-width:425px) {
+    #app{
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column-reverse;
+        border-radius:none;
+        padding: 0;
+        .logIn{
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .image_cover{
+            width: 100%;
+            .image_desktop{
+                display: none;
+            }
+            .image_mobile{
+                display: block;
+            }
+        }
+    
+    }   
+}

@@ -4,7 +4,7 @@ import { SharedService } from 'src/app/services/shared.service';
 @Component({
   selector: 'app-success-message',
   templateUrl: './success-message.component.html',
-  styleUrls: ['./success-message.component.scss']
+  styleUrls: ['./success-message.component.scss','success-message.responsive.component.scss']
 })
 export class SuccessMessageComponent implements OnInit {
  @Input() successMessage!:boolean;

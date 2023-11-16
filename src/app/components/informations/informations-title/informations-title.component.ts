@@ -3,7 +3,7 @@ import { Component, Input} from '@angular/core';
 @Component({
   selector: 'app-informations-title',
   templateUrl: './informations-title.component.html',
-  styleUrls: ['./informations-title.component.scss']
+  styleUrls: ['./informations-title.component.scss','informations-title.responsive.component.scss']
 })
 export class InformationsTitleComponent {
   @Input() title!:string;

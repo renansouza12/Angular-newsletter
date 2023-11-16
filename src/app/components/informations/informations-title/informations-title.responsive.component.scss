@@ -1,0 +1,25 @@
+@media screen and (max-width:768px) {
+    .informations_title{
+        h1{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1rem;
+            
+        }
+    }
+}
+@media screen and (max-width:375px) {
+    .informations_title{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 0.8rem;
+            
+        }
+    }
+}
+
+
+

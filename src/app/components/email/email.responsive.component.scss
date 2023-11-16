@@ -1,0 +1,49 @@
+@media screen and (max-width:768px){
+    .email_container{
+        .email_informations{
+            label{
+             
+                font-size: 0.75rem;
+            }
+            .validation_error{
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        button{
+            font-size: 0.9rem;
+            padding: 0.5rem 2rem;
+        }
+    
+    }
+}
+@media screen and (max-width:425px) {
+    .email_container{
+      width: 100%;
+        button{
+            font-size: 0.8rem;
+            padding: 1rem 2rem;
+        }
+    
+    }
+}
+@media screen and (max-width:375px){
+    .email_container{
+        .email_informations{
+            label{
+                font-size: 0.75rem;
+            }
+            .validation_error{
+                p{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        input{
+            font-size: 0.8rem;
+        }
+    
+    }
+}
+
