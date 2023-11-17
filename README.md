@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/newsletter-signup-form-with-angular-5MtyZQHvtw)
 - Live Site URL: [Add live site URL here](https://angular-newsletter-page.netlify.app)
 
 ## My process
